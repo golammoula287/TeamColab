@@ -19,35 +19,40 @@ const linkData = [
         icon: <MdDashboard />,
     },
     {
-        label: "Tasks",
-        link: "tasks",
+        label: "Prospects",
+        link: "prospect",
         icon: <FaTasks />,
     },
+    // {
+    //     label: "Tasks",
+    //     link: "tasks",
+    //     icon: <FaTasks />,
+    // },
+    // {
+    //     label: "Completed",
+    //     link: "completed/completed",
+    //     icon: <MdTaskAlt />,
+    // },
+    // {
+    //     label: "In Progress",
+    //     link: "in-progress/in progress",
+    //     icon: <MdOutlinePendingActions />,
+    // },
+    // {
+    //     label: "To Do",
+    //     link: "todo/todo",
+    //     icon: <MdOutlinePendingActions />,
+    // },
     {
-        label: "Completed",
-        link: "completed/completed",
-        icon: <MdTaskAlt />,
-    },
-    {
-        label: "In Progress",
-        link: "in-progress/in progress",
-        icon: <MdOutlinePendingActions />,
-    },
-    {
-        label: "To Do",
-        link: "todo/todo",
-        icon: <MdOutlinePendingActions />,
-    },
-    {
-        label: "Team",
+        label: "Add Users",
         link: "team",
         icon: <FaUsers />,
     },
-    {
-        label: "Trash",
-        link: "trashed",
-        icon: <FaTrashAlt />,
-    },
+    // {
+    //     label: "Trash",
+    //     link: "trashed",
+    //     icon: <FaTrashAlt />,
+    // },
 ]
 
 const Sidebar = () => {
@@ -87,7 +92,7 @@ const Sidebar = () => {
                 <p className="bg-blue-600 p-2 rounded-full">
                     <MdOutlineAddTask className="text-white text-2xl font-black" />
                 </p>
-                <span className="text-2xl font-bold text-black">TaskMe</span>
+                <span className="text-2xl font-bold text-black">TeamColab</span>
             </h1>
 
             <div className="flex-1 flex flex-col gap-y-5 py-8">

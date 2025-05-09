@@ -13,6 +13,7 @@ import Tasks from "./pages/Tasks"
 import Trash from "./pages/Trash"
 import Users from "./pages/Users"
 import Dashboard from "./pages/Dashboard"
+import Prospect from "./pages/Prospect"
 import { setOpenSidebar } from "./redux/slices/authSlice"
 
 function Layout() {
@@ -103,6 +104,7 @@ function App() {
                         element={<Navigate to="/dashboard" />}
                     />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/prospect" element={<Prospect />} />
                     <Route path="/tasks" element={<Tasks />} />
                     <Route path="/completed/:status" element={<Tasks />} />
                     <Route path="/in-progress/:status" element={<Tasks />} />
