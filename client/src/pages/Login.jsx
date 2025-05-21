@@ -102,9 +102,13 @@ const Login = () => {
                                 }
                             />
 
-                            <span className="text-sm text-gray-500 hover:text-blue-600 hover:underline cursor-pointer">
-                                Forget Password?
-                            </span>
+                                <p
+                                    onClick={() => navigate("/forgot-password")}
+                                    className="text-sm text-gray-500 hover:text-blue-600 hover:underline cursor-pointer text-right"
+                                >
+                                    Forgot Password?
+                                </p>
+
 
                             {isLoading ? (
                                 <Loading />

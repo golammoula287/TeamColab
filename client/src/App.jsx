@@ -14,7 +14,10 @@ import Trash from "./pages/Trash"
 import Users from "./pages/Users"
 import Dashboard from "./pages/Dashboard"
 import Prospect from "./pages/Prospect"
+import ForgotPassword from "./pages/ForgotPassword"
 import { setOpenSidebar } from "./redux/slices/authSlice"
+import Projects from "./pages/Projects"
+import Clients from "./pages/Client"
 
 function Layout() {
     const { user } = useSelector((state) => state.auth)
@@ -105,6 +108,7 @@ function App() {
                     />
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/prospect" element={<Prospect />} />
+                    <Route path="/project" element={<Projects />} />
                     <Route path="/tasks" element={<Tasks />} />
                     <Route path="/completed/:status" element={<Tasks />} />
                     <Route path="/in-progress/:status" element={<Tasks />} />
@@ -112,9 +116,14 @@ function App() {
                     <Route path="/team" element={<Users />} />
                     <Route path="/trashed" element={<Trash />} />
                     <Route path="/task/:id" element={<TaskDetails />} />
+                    <Route path="/client" element ={<Clients/>} /> 
+
+                    
+
                 </Route>
 
                 <Route path="/log-in" element={<Login />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
             </Routes>
 
             <Toaster richColors />

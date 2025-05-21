@@ -50,6 +50,15 @@ export const prospectApiSlice = apiSlice.injectEndpoints({
                 credentials: "include",
             }),
         }),
+
+        // ✅ Convert prospect to client
+        convertProspectToClient: builder.mutation({
+            query: (id) => ({
+                url: `${PROSPECT_URL}/convert/${id}`,
+                method: "POST",
+                credentials: "include",
+            }),
+        }),
     }),
 })
 
@@ -59,4 +68,5 @@ export const {
     useGetProspectByIdQuery,
     useUpdateProspectMutation,
     useDeleteProspectMutation,
+    useConvertProspectToClientMutation, // ✅ Exported here
 } = prospectApiSlice

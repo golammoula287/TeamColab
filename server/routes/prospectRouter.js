@@ -5,6 +5,8 @@ import {
     getProspectById,
     updateProspect,
     deleteProspect,
+    convertProspectToClient,
+
 } from "../controllers/prospectController.js"
 
 
@@ -34,5 +36,7 @@ router.put("/:id", updateProspect)
 // @desc    Delete a prospect
 // @access  Protected
 router.delete("/:id", deleteProspect)
+
+router.post("/convert/:id", convertProspectToClient)
 
 export default router

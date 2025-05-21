@@ -23,6 +23,17 @@ const linkData = [
         link: "prospect",
         icon: <FaTasks />,
     },
+    {
+        label: "Projects",
+        link: "Project",
+        icon: <FaTasks />,
+    },
+    {
+        label: "Clients",
+        link: "client",
+        icon: <FaUsers />,
+    },
+
     // {
     //     label: "Tasks",
     //     link: "tasks",

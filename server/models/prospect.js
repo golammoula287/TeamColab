@@ -1,15 +1,17 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 const prospectSchema = new mongoose.Schema(
-    {
-        name: { type: String, required: true },
-        companyName: { type: String, required: true },
-        email: { type: String, required: true },
-        number: { type: String, required: true },
-        description: { type: String },
-    },
-    { timestamps: true }
-)
+  {
+    name: { type: String, required: true },
+    companyName: { type: String },
+    email: { type: String },
+    number: { type: String },
+    description: { type: String },
+    whatsapp: { type: Boolean, default: false }, // true = Yes, false = No
+  },
+  { timestamps: true }
+);
 
-const Prospect = mongoose.model("Prospect", prospectSchema)
-export default Prospect
+const Prospect = mongoose.model("Prospect", prospectSchema);
+export default Prospect;
+
