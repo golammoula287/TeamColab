@@ -55,7 +55,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001" , "https://team-colab-frontend-three.vercel.app/"],
+    origin: ["https://team-colab-frontend-three.vercel.app/"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
