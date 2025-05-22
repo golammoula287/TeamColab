@@ -98,11 +98,11 @@ const PORT = process.env.PORT || 5000
 
 const app = express()
 
-// ⚠️ Allow all origins – for testing only!
 app.use(
   cors({
-    origin: "*",
+    origin: ["https://team-colab-frontend-three.vercel.app" , "http://localhost:3000"],
     methods: ["GET", "POST", "DELETE", "PUT"],
+    credentials: true,
   })
 )
 
