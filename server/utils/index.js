@@ -64,7 +64,7 @@ import mongoose from "mongoose"
 export const dbConnection = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI, {
-      serverSelectionTimeoutMS: 10000, // Wait max 10s for DB server
+      serverSelectionTimeoutMS: 15000, // Wait max 10s for DB server
     })
 
     console.log("✅ MongoDB connected")
