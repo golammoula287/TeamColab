@@ -9,7 +9,8 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "https://team-colab-sage.vercel.app",
+         target: "https://team-colab-sage.vercel.app",
+       
         changeOrigin: true,
       }
     }

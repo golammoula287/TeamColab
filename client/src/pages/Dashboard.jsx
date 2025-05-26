@@ -179,13 +179,7 @@ const Dashboard = () => {
             icon: <FaNewspaper />,
             bg: "bg-[#1d4ed8]",
         },
-        {
-            _id: "1",
-            label: "TOTAL PROJECTS",
-            total: data?.totalTasks || 0,
-            icon: <FaNewspaper />,
-            bg: "bg-[#1d4ed8]",
-        },
+        
         {
             _id: "2",
             label: "COMPLTED PROJECTS",

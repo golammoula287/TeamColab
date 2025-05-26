@@ -10,10 +10,7 @@ import {
   useAddCostToProjectMutation,
 } from "../redux/slices/api/projectApiSlice"
 import { toast } from "sonner"
-import {
-    useGetProspectsQuery,
-    useDeleteProspectMutation,
-} from "../redux/slices/api/prospectApiSlice"
+
 
 // Cost Modal
 const AddCostModal = ({ open, onClose, onSubmit, projectName }) => {
