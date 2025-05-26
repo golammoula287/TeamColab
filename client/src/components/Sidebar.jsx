@@ -34,36 +34,36 @@ const linkData = [
         icon: <FaUsers />,
     },
 
-    {
-        label: "Tasks",
-        link: "tasks",
-        icon: <FaTasks />,
-    },
-    {
-        label: "Completed",
-        link: "completed/completed",
-        icon: <MdTaskAlt />,
-    },
-    {
-        label: "In Progress",
-        link: "in-progress/in progress",
-        icon: <MdOutlinePendingActions />,
-    },
-    {
-        label: "To Do",
-        link: "todo/todo",
-        icon: <MdOutlinePendingActions />,
-    },
-    {
-        label: "Add Users",
-        link: "team",
-        icon: <FaUsers />,
-    },
-    {
-        label: "Trash",
-        link: "trashed",
-        icon: <FaTrashAlt />,
-    },
+    // {
+    //     label: "Tasks",
+    //     link: "tasks",
+    //     icon: <FaTasks />,
+    // },
+    // {
+    //     label: "Completed",
+    //     link: "completed/completed",
+    //     icon: <MdTaskAlt />,
+    // },
+    // {
+    //     label: "In Progress",
+    //     link: "in-progress/in progress",
+    //     icon: <MdOutlinePendingActions />,
+    // },
+    // {
+    //     label: "To Do",
+    //     link: "todo/todo",
+    //     icon: <MdOutlinePendingActions />,
+    // },
+    // {
+    //     label: "Add Users",
+    //     link: "team",
+    //     icon: <FaUsers />,
+    // },
+    // {
+    //     label: "Trash",
+    //     link: "trashed",
+    //     icon: <FaTrashAlt />,
+    // },
 ]
 
 const Sidebar = () => {
